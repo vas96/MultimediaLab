@@ -63,6 +63,7 @@ namespace WindowsGlTest1
         private void button1_Click(object sender, EventArgs e)
         {
             points.Clear();
+
             Gl.glClear(Gl.GL_COLOR_BUFFER_BIT);
 
 
@@ -88,13 +89,13 @@ namespace WindowsGlTest1
         
         private void button3_Click(object sender, EventArgs e)
         {
-           
+         //   points.RemoveAt(count);
+
             Gl.glClear(Gl.GL_COLOR_BUFFER_BIT);
             count--;
 
-
            /// Destroy(count);
-            if (count >= 0) { Destroy(count); }
+            if (count >= 0) { Destroy(); }
     
             if (count == -1)
             {
@@ -105,19 +106,24 @@ namespace WindowsGlTest1
           
         }
 
-        private void Destroy( int count)
+        private void Destroy()
         {
-            
-            for (int j = points.Count - 1; j >= count; j--)
+         
+            for (int i=0; i <= count; i++)
             {
-                Gl.glClear(Gl.GL_COLOR_BUFFER_BIT);
-
-                for (int i = j; i >= 0; i--)
-                {
-                    Draw(points[i].X, points[i].Y);
-                }
-                Thread.Sleep(2);
+                Draw(points[i].X, points[i].Y);
             }
+               
+   //         for (int j = points.Count - 1; j >= count; j--)
+  //         {
+//                Gl.glClear(Gl.GL_COLOR_BUFFER_BIT);
+
+                //for (int i = j; i >= 0; i--)
+                //{
+                 //   Draw(points[i].X, points[i].Y);
+                //}
+              //  Thread.Sleep(2);
+            //}
             anT.Invalidate();
             if (count == -1) { points.Clear(); }
           //  points.Clear();
