@@ -16,3 +16,4 @@ D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.Properties.
 D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.csproj.GenerateResource.Cache
 D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.exe
 D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.pdb
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.csprojResolveAssemblyReference.cache
