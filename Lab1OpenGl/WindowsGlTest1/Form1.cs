@@ -148,6 +148,7 @@ namespace WindowsGlTest1
             float b = (float)MyColor.Next(0, 256) / 255;
             float c = (float)MyColor.Next(0, 256) / 255;
             //   Gl.glClear(Gl.GL_COLOR_BUFFER_BIT);
+
             Gl.glBegin(Gl.GL_TRIANGLES);
             Gl.glColor3d(a, b, c);
 
