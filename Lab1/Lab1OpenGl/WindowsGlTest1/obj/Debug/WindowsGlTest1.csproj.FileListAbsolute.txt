@@ -1,0 +1,38 @@
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\WindowsGlTest1.exe.config
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\WindowsGlTest1.exe
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\WindowsGlTest1.pdb
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.FreeGlut.dll
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.OpenGl.dll
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.Platform.Windows.dll
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.FreeGlut.xml
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.OpenGl.xml
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.Platform.Windows.xml
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\obj\Debug\WindowsGlTest1.csprojResolveAssemblyReference.cache
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\obj\Debug\WindowsGlTest1.Form1.resources
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\obj\Debug\WindowsGlTest1.Properties.Resources.resources
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\obj\Debug\WindowsGlTest1.csproj.GenerateResource.Cache
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\obj\Debug\WindowsGlTest1.exe
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\obj\Debug\WindowsGlTest1.pdb
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.DevIl.dll
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.FreeType.dll
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.DevIl.xml
+c:\users\vas\documents\visual studio 2015\Projects\WindowsGlTest1\WindowsGlTest1\bin\Debug\Tao.FreeType.xml
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\WindowsGlTest1.exe.config
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Debug\WindowsGlTest1.exe
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Debug\WindowsGlTest1.pdb
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\WindowsGlTest1.exe
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\WindowsGlTest1.pdb
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.DevIl.dll
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.FreeGlut.dll
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.FreeType.dll
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.OpenGl.dll
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.Platform.Windows.dll
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.DevIl.xml
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.FreeGlut.xml
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.FreeType.xml
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.OpenGl.xml
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\bin\Debug\Tao.Platform.Windows.xml
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Debug\WindowsGlTest1.csprojResolveAssemblyReference.cache
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Debug\WindowsGlTest1.Form1.resources
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Debug\WindowsGlTest1.Properties.Resources.resources
+D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Debug\WindowsGlTest1.csproj.GenerateResource.Cache
