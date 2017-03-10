@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background: white;  /*скрываем облака, когда они будут выходит за границы голубого блока*/
+ 
+}
+
+@-webkit-keyframes moveclouds {
+  0% {margin-left: 1100px;
+     opacity: 0.5;}
+  100% {margin-left: -1100px;}
+} 
+/*
+.clouds{
+    -webkit-animation: moveclouds 20s linear infinite;
+    -mox-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+*/
+.clouds{
+    padding: 100px 0;
+    position: absolute;
+    overflow: hidden;
+    margin-top: -100px;
+}
+
+#pictureUp {
+  width: 1000px;
+  height: 300px;
+
+  border-radius: 0%;
+  margin: 50px auto 0;
+  position: relative;  
+  overflow: hidden;  
+  -webkit-animation: skyChange 66s linear infinite;
+}
+
+.cloud {
+    width: 200px;
+    height: 66px;
+    background-color: #f9f9fa; 
+    position: relative;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+        
+    
+}
+.cloud:after{    
+    content:'';
+    background:  #f9f9fa;
+    width: 120px;
+    height: 120px;
+    top: -50px; 
+    left: 65px;
+    right: auto;
+    border: 1px solid  #f9f9fa;
+     position: absolute;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    transform: rotate(30deg)
+        
+}
+.cloud:before{    
+    content:"";
+    position: absolute;
+    background:  #f9f9fa;
+    width: 100px;
+    height: 80px;
+    border: 1px solid  #f9f9fa;
+    top: -15px;
+    left: 10px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    transform: rotate(30deg)
+        
+}
+
+.one{
+    -webkit-animation: moveclouds 22s linear infinite;
+    -mox-animation: moveclouds 22s linear infinite;
+    -o-animation: moveclouds 22s linear infinite;
+}
+
+.two{
+    
+    transform: scale(0.6);
+    opacity: 0.6;
+    
+     -webkit-animation: moveclouds 20s linear infinite;
+    -mox-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite; 
+    
+}
+
+.three{
+    left: -200px;
+    top:-200px;
+    
+    transform: scale(0.75);
+    opacity: 0.75;
+     -webkit-animation: moveclouds 18s linear infinite;
+    -mox-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite; 
+    
+}
+
+.four{
+    left: 470;
+    top:-200px;
+    
+    transform: scale(0.5);
+    opacity: 0.75;
+     -webkit-animation: moveclouds 19s linear infinite;
+    -mox-animation: moveclouds 19s linear infinite;
+    -o-animation: moveclouds 19s linear infinite; 
+    
+}
+
+.five{
+    left: 200px;
+    top:-200px;
+    
+    transform: scale(0.55);
+    opacity: 0.95;
+     -webkit-animation: moveclouds 16s linear infinite;
+    -mox-animation: moveclouds 16s linear infinite;
+    -o-animation: moveclouds 16s linear infinite; 
+    
+}
+
+ 
+#sun{
+    margin: 5px;
+	width: 100px;
+	height: 100px;
+	background: hsl(65, 100%, 50%);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    box-shadow: 0 0 20px orange;
+    
+    -webkit-animation: sunrise 66s linear infinite;
+    
+}
+
+.moon {
+  margin: 10px;
+    margin-top: -100px;
+    width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #ddcfcf;
+  box-shadow: 0 0 20px #ffffff;
+  -webkit-animation: moonrise 66s linear infinite;
+}
+
+@keyframes sunrise {
+
+	0% {
+		background: #f00;
+        opacity: 0;
+	}
+	
+	33% {
+		background: #ffcc00;
+        opacity: 0.1;
+	}
+
+	66% {
+		background: #ffd630;
+        opacity: 1;
+	}
+
+	100% {
+		background: #f00;
+        opacity:0;
+	}
+
+}
+
+@keyframes moonrise {
+
+	0% {
+		 box-shadow: 15px 15px 0 0 #ddcfcf;
+        opacity: 1;
+	}
+	
+	33% {
+		 box-shadow: 15px 15px 0 0 #ddcfcf;
+        opacity: 0;
+	}
+
+	66% {
+		 box-shadow: 15px 15px 0 0 #ddcfcf;
+        opacity: 0;
+	}
+
+	100% {
+		 box-shadow: 15px 15px 0 0 #ddcfcf;
+        opacity: 1;
+	}
+
+}
+
+@-webkit-keyframes skyChange {
+0% { background: #00000c; }
+4% { background: linear-gradient(to bottom, #020111 85%,#191621 100%); }
+8% { background: linear-gradient(to bottom, #020111 60%,#20202c 100%); }
+12% { background: linear-gradient(to bottom, #020111 10%,#3a3a52 100%); }
+16% { background: linear-gradient(to bottom, #20202c 0%,#515175 100%); }
+20% { background: linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%); }
+24% { background: linear-gradient(to bottom, #4a4969 0%,#7072ab 50%,#cd82a0 100%); }
+28% { background: linear-gradient(to bottom, #757abf 0%,#8583be 60%,#eab0d1 100%); }
+32% { background: linear-gradient(to bottom, #82addb 0%,#ebb2b1 100%); }
+36% { background: linear-gradient(to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%); }
+40% { background: linear-gradient(to bottom, #b7eaff 0%,#94dfff 100%); }
+44% { background: linear-gradient(to bottom, #9be2fe 0%,#67d1fb 100%); }
+48% { background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%); }
+52% { background: linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%); }
+56% { background: linear-gradient(to bottom, #2d91c2 0%,#1e528e 100%); }
+60% { background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%); }
+64% { background: linear-gradient(to bottom, #1e528e 0%,#265889 50%,#9da671 100%); }
+68% { background: linear-gradient(to bottom, #1e528e 0%,#728a7c 50%,#e9ce5d 100%); }
+72% { background: linear-gradient(to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%); }
+76% { background: linear-gradient(to bottom, #163C52 0%,#4F4F47 30%,#C5752D 60%,#B7490F 80%, #2F1107 100%); }
+80% { background: linear-gradient(to bottom, #071B26 0%,#071B26 30%,#8A3B12 80%,#240E03 100%); }
+84% { background: linear-gradient(to bottom, #010A10 30%,#59230B 80%,#2F1107 100%); }
+95% { background: linear-gradient(to bottom, #090401 50%,#4B1D06 100%); }
+100% { background: linear-gradient(to bottom, #00000c 80%,#150800 100%); }
+    
+    
+}
+
+#pictureMiddle{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse;
+     background: linear-gradient(180deg, rgb(129, 244, 144), rgb(17, 92, 27));
+     animation: backgroundMid 36s infinite alternate;
+
+    margin: 0px auto 0;
+    width: 1000px;
+}
+
+#meadows_1{
+  z-index: 10;
+  width: 333px;
+  height: 190px;
+  border-radius: 100% 0% 0% 0%;
+  margin: 0;
+  margin-top: -70px; 
+  background: linear-gradient(to left, #52c234 , #061700); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     animation: backgroundMid 36s infinite alternate;
+}
+
+#meadows_3{
+  z-index: 11;
+  width: 633px;
+  height: 160px;
+  border-radius: 0% 1000% 0% 0%;
+  margin: 50px auto 0;
+  margin-top: -40px;
+  margin-left: 0;
+  background: linear-gradient(to left, #DCE35B , #45B649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+     animation: backgroundMid 36s infinite alternate;
+}
+
+@keyframes backgroundMid {
+  50% {
+    background: #8d9395;
+    box-shadow: 0 -200px 100px -100px #2e2c2c inset;
+  }
+}
+
+
+
+#pictureMiddle2{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+    display: flex;
+   
+    flex-direction: row-reverse;  
+    margin: 0px auto 0;
+    width: 1000px;
+    height: 100px;
+}
+
+#fence_1{
+   z-index: 3;
+   margin-top: 111px;
+    margin-left: 40px;
+    margin-right: 40px;
+/*   background-image:url(images/50c9b7020912.png);*/
+    background-color: #fd2222;
+   background-size: cover;  
+   height: 8px;
+   width: 336px;
+}
+
+#pictureDown{
+    height: 200px;
+    background-color: #100f0f;
+     border-bottom: 22px solid #464141;
+     border-top: 22px solid #4d4545;
+    margin: 0px auto 0;
+    margin-top: -100px;
+    width: 1000px;
+        
+}
+
+#CarContainer{
+    overflow: hidden;
+    z-index: 4;
+    width: 1000px;
+    height: 100px;
+    margin: 50px auto 0;
+    height: 200px;
+    margin: 0px auto 0;
+     margin-top: -250px;
+    position: relative;
+}
+
+#car{
+    z-index: 999;
+    position: absolute;  
+    width: 300px;
+    height: 300px;
+    background-image: url(images/0a8e012cbadd9246fcf08a87fe9e42a0.png);
+    background-size: cover;
+     -webkit-animation: movecCar 16s linear infinite;
+    
+}
+
+@-webkit-keyframes movecCar {
+  0% {margin-left: -1100px;
+     }
+  100% {margin-left: 1100px;}
+} 
