@@ -6,7 +6,7 @@
 body {
   position: relative;
   margin: 0;
-  background: white;  /*скрываем облака, когда они будут выходит за границы голубого блока*/
+  background: white;  
  
 }
 
@@ -89,8 +89,7 @@ body {
     -o-animation: moveclouds 22s linear infinite;
 }
 
-.two{
-    
+.two{ 
     transform: scale(0.6);
     opacity: 0.6;
     
@@ -234,9 +233,7 @@ body {
 80% { background: linear-gradient(to bottom, #071B26 0%,#071B26 30%,#8A3B12 80%,#240E03 100%); }
 84% { background: linear-gradient(to bottom, #010A10 30%,#59230B 80%,#2F1107 100%); }
 95% { background: linear-gradient(to bottom, #090401 50%,#4B1D06 100%); }
-100% { background: linear-gradient(to bottom, #00000c 80%,#150800 100%); }
-    
-    
+100% { background: linear-gradient(to bottom, #00000c 80%,#150800 100%); }   
 }
 
 #pictureMiddle{
@@ -276,12 +273,11 @@ body {
 
 @keyframes backgroundMid {
   50% {
-    background: #8d9395;
-    box-shadow: 0 -200px 100px -100px #2e2c2c inset;
+    background: #04041a;
+    box-shadow: 0 -200px 100px -100px #04041a inset;
+      opacity: 1;
   }
 }
-
-
 
 #pictureMiddle2{
     display: -webkit-flex; /* Safari */
@@ -317,25 +313,25 @@ body {
         
 }
 
-#CarContainer{
+#carContainer{
     overflow: hidden;
     z-index: 4;
     width: 1000px;
-    height: 100px;
+    height: 200px;
     margin: 50px auto 0;
     height: 200px;
     margin: 0px auto 0;
-     margin-top: -250px;
+     margin-top: -223px;
     position: relative;
+    
 }
 
 #car{
     z-index: 999;
-    position: absolute;  
+    position: relative;  
     width: 300px;
     height: 300px;
-    background-image: url(images/0a8e012cbadd9246fcf08a87fe9e42a0.png);
-    background-size: cover;
+    background-size:cover;
      -webkit-animation: movecCar 16s linear infinite;
     
 }
