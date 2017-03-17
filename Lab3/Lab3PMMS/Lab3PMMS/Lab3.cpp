@@ -22,14 +22,18 @@ void redraw()
 	glLoadIdentity();
 	glColor3f(0, 1, 1);
 
-	double tr1A = -0.8f;
+	double tr1A = -0.6f;
 	double tr2A = -0.8f;
 
-	double tr1B = -0.4f;
+	double tr1B = -0.3f;
 	double tr2B = -0.2f;
 
 	double tr1C = -0.0f;
 	double tr2C = -0.8f;
+
+	double tr1D =  0.2f;
+	double tr2D = -0.6f;
+
 
 	double trMid1 = (tr1A + tr1B + tr1C) / 3;
 	double trMid2 = (tr2A + tr2B + tr2C) / 3;
@@ -45,13 +49,18 @@ void redraw()
 	
 	//glScaled(1, 0.1, 1);
 	//glTranslatef(0.1f, 0.0f, -6.0f);
-	glBegin(GL_TRIANGLES);
-	glColor3f(1.0f, 0.0f, 0.0f); // Red
-	glVertex2f(tr1A, tr2A);
+	
+	glBegin(GL_TRIANGLE_FAN);
 	glColor3f(0.0f, 1.0f, 0.0f); // Green
 	glVertex2f(tr1B, tr2B);
+	glColor3f(1.0f, 0.0f, 0.0f); // Red
+	glVertex2f(tr1A, tr2A);
 	glColor3f(0.0f, 0.0f, 1.0f); // Blue
 	glVertex2f(tr1C, tr2C);
+
+	glColor3f(0.0f, 0.0f, 0.0f); // Blue
+	glVertex2f(tr1D, tr2D);
+
 	glEnd();
 
 	int up = moveUp*10;
