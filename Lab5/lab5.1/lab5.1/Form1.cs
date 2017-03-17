@@ -74,7 +74,7 @@ namespace lab5._1
 
                 Il.ilBindImage(imageIdEarth);
 
-                if (Il.ilLoadImage("C:\\Users\\Vas\\Documents\\Visual Studio 2015\\Projects\\lab5.1\\lab5.1\\bin\\Debug\\earth.jpg"))
+                if (Il.ilLoadImage(System.IO.Path.GetFullPath(@"Images\earth.jpg")))
                 {
 
                     int width = Il.ilGetInteger(Il.IL_IMAGE_WIDTH);
@@ -106,7 +106,7 @@ namespace lab5._1
 
                 Il.ilBindImage(imageIdBackTexture);
 
-                if (Il.ilLoadImage("C:\\Users\\Vas\\Desktop\\tumblr_static_outer-space-hd-wallpaper.jpg"))
+                if (Il.ilLoadImage(System.IO.Path.GetFullPath(@"Images\tumblr_static_outer-space-hd-wallpaper.jpg")))
                 {
 
                     int width = Il.ilGetInteger(Il.IL_IMAGE_WIDTH);
@@ -131,7 +131,6 @@ namespace lab5._1
             }
         }
 
-
         void CloudTexture()
         {
             {
@@ -139,7 +138,7 @@ namespace lab5._1
 
                 Il.ilBindImage(imageIdCloudTexture);
 
-                if (Il.ilLoadImage("C:\\Users\\Vas\\Desktop\\p1Jf722.png"))
+                if (Il.ilLoadImage((System.IO.Path.GetFullPath(@"Images\p1Jf722.png"))))
                 {
 
                     int width = Il.ilGetInteger(Il.IL_IMAGE_WIDTH);
@@ -294,10 +293,6 @@ namespace lab5._1
             }
 
         }
-
-
-
-
 
 
 
