@@ -1,7 +1,10 @@
 ﻿  Lab3.cpp
-d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(8): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(70): warning C4305: '=': truncation from 'double' to 'GLfloat'
-d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(74): warning C4305: '=': truncation from 'double' to 'GLfloat'
-d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(79): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(6): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(10): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(56): warning C4305: '=': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(59): warning C4305: '=': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(93): warning C4305: '=': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(97): warning C4305: '=': truncation from 'double' to 'GLfloat'
+d:\multimedalab\lab3\lab3pmms\lab3pmms\lab3.cpp(107): warning C4305: '+=': truncation from 'double' to 'GLfloat'
   Lab3PMMS.vcxproj -> D:\MultimedaLab\Lab3\Lab3PMMS\Debug\Lab3PMMS.exe
   Lab3PMMS.vcxproj -> D:\MultimedaLab\Lab3\Lab3PMMS\Debug\Lab3PMMS.pdb (Full PDB)

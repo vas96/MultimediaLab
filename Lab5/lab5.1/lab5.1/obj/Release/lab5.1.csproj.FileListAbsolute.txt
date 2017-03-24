@@ -1,0 +1,16 @@
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\lab5.1.exe.config
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\lab5.1.exe
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\lab5.1.pdb
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.DevIl.dll
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.FreeGlut.dll
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.OpenGl.dll
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.Platform.Windows.dll
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.DevIl.xml
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.FreeGlut.xml
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.OpenGl.xml
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\bin\Release\Tao.Platform.Windows.xml
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\obj\Release\lab5._1.Form1.resources
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\obj\Release\lab5._1.Properties.Resources.resources
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\obj\Release\lab5.1.csproj.GenerateResource.Cache
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\obj\Release\lab5.1.exe
+D:\MultimedaLab\Lab5\lab5.1\lab5.1\obj\Release\lab5.1.pdb

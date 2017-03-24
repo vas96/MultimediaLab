@@ -31,19 +31,24 @@ namespace lab5._1
         public int imageIdEarth = 0;
         public int imageIdBackTexture = 1;
         public int imageIdCloudTexture = 2;
+        public int imageIdUk =3;
 
         public uint mGlTextureObjectEarth = 0;
         public uint mGlTextureObjectBack = 1;
         public uint mGlTextureObjectCloud = 2;
+        public uint mGlTextureObjectUk = 3;
 
         private void Form1_Load(object sender, EventArgs e)
-        { Glut.glutInit();
+        {
+            checkBox3.Checked = true;
+            Glut.glutInit();
             Glut.glutInitDisplayMode(Glut.GLUT_RGB | Glut.GLUT_DOUBLE);
             //Devil
             Il.ilInit();
             Il.ilEnable(Il.IL_ORIGIN_SET);
 
             Gl.glClearColor(255, 255, 255, 1);
+            Gl.glColor3f(1.0f, 0, 0);
 
             Gl.glViewport(0, 0, anTvas.Width, anTvas.Height);
 
@@ -63,6 +68,7 @@ namespace lab5._1
             timerMove.Start();
 
             EarthTexture();
+            UkTexture();
             BackTexture();
             CloudTexture();
         }
@@ -89,6 +95,38 @@ namespace lab5._1
                             break;
                         case 32:
                             mGlTextureObjectEarth = MakeGlTexture(Gl.GL_RGBA, Il.ilGetData(), width, height);
+                            break;
+                    }
+
+                    textureIsLoad = true;
+
+                    Il.ilDeleteImages(1, ref imageIdEarth);
+                }
+            }
+        }
+
+        void UkTexture()
+        {
+            {
+                Il.ilGenImages(1, out imageIdUk);
+
+                Il.ilBindImage(imageIdUk);
+
+                if (Il.ilLoadImage(System.IO.Path.GetFullPath(@"Images\cities_ukr2.png")))
+                {
+
+                    int width = Il.ilGetInteger(Il.IL_IMAGE_WIDTH);
+                    int height = Il.ilGetInteger(Il.IL_IMAGE_HEIGHT);
+
+                    int bitspp = Il.ilGetInteger(Il.IL_IMAGE_BITS_PER_PIXEL);
+
+                    switch (bitspp)
+                    {
+                        case 24:
+                            mGlTextureObjectUk = MakeGlTexture(Gl.GL_RGB, Il.ilGetData(), width, height);
+                            break;
+                        case 32:
+                            mGlTextureObjectUk = MakeGlTexture(Gl.GL_RGBA, Il.ilGetData(), width, height);
                             break;
                     }
 
@@ -199,6 +237,8 @@ namespace lab5._1
             Gl.glClearColor(255, 255, 255, 1);
             Gl.glLoadIdentity();
 
+            Gl.glColor3f(1.0f, 1, 0);
+
             if (textureIsLoad)
             {
                 angl++;
@@ -233,43 +273,61 @@ namespace lab5._1
                 Gl.glDisable(Gl.GL_TEXTURE_2D);
                 #endregion
 
-           
+
                 #region Cloud
-       
-                Gl.glEnable(Gl.GL_TEXTURE_2D);
-                Gl.glBindTexture(Gl.GL_TEXTURE_2D, mGlTextureObjectCloud);
-               
+                if (checkBox3.Checked == true)
+                {
+                    Gl.glEnable(Gl.GL_TEXTURE_2D);
+                    Gl.glBindTexture(Gl.GL_TEXTURE_2D, mGlTextureObjectCloud);
 
-                Gl.glEnable(Gl.GL_ALPHA_TEST);
-                Gl.glAlphaFunc(Gl.GL_GREATER, 0.66f);
-            //    Gl.glBlendFunc(Gl.GL_ZERO, Gl.GL_ZERO);
-                Gl.glPushMatrix();
-                Gl.glTranslated(0, -0, -4);
-                Gl.glRotated(-90, 1, 0, 0);
-                Gl.glRotated(angl, 0, 0, 1);
 
-                Glu.GLUquadric quadr2;
-                quadr2 = Glu.gluNewQuadric();
-                Glu.gluQuadricTexture(quadr2, Gl.GL_TRUE);
-                Gl.glEnable(Gl.GL_TEXTURE_2D);
-                Glu.gluSphere(quadr2, 0.7f, 32, 32);
-               // Gl.glDisable(Gl.GL_BLEND);
-                Gl.glDisable(Gl.GL_TEXTURE_2D);
+                    Gl.glEnable(Gl.GL_ALPHA_TEST);
+                    Gl.glAlphaFunc(Gl.GL_GREATER, 0.66f);
+                    //    Gl.glBlendFunc(Gl.GL_ZERO, Gl.GL_ZERO);
+                    Gl.glPushMatrix();
+                    Gl.glTranslated(0, -0, -4);
+                    Gl.glRotated(-90, 1, 0, 0);
+                    Gl.glRotated(angl, 0, 0, 1);
 
-                Gl.glDisable(Gl.GL_BLEND);
-                Gl.glDisable(Gl.GL_ALPHA_TEST);
+                    Glu.GLUquadric quadr2;
+                    quadr2 = Glu.gluNewQuadric();
+                    Glu.gluQuadricTexture(quadr2, Gl.GL_TRUE);
+                    Gl.glEnable(Gl.GL_TEXTURE_2D);
+                    Glu.gluSphere(quadr2, 0.7f, 32, 32);
+                    // Gl.glDisable(Gl.GL_BLEND);
+                    Gl.glDisable(Gl.GL_TEXTURE_2D);
 
-               // Gl.auxSwapBuffers();
+                    Gl.glDisable(Gl.GL_BLEND);
+                    Gl.glDisable(Gl.GL_ALPHA_TEST);
 
-                Gl.glPopMatrix();
-       
+                    // Gl.auxSwapBuffers();
+
+                    Gl.glPopMatrix();
+                }
+
+                if (checkBox2.Checked == true)
+                {
+                    Gl.glColor3f(1.0f, 0, 0);
+                    Gl.glPushMatrix();
+                    Gl.glColor3f(1.0f, 0, 0);
+                    Gl.glTranslated(0, -0, -4);
+                    Gl.glRotated(-90, 1, 0, 0);
+                    Gl.glRotated(angl, 0, 0, 1);
+                    Glut.glutWireSphere(0.7f, 32, 32);
+
+                    Gl.glPopMatrix();
+                }
+
                 #endregion
 
 
                 #region Earth
-               
+
                 Gl.glEnable(Gl.GL_TEXTURE_2D);
-                Gl.glBindTexture(Gl.GL_TEXTURE_2D, mGlTextureObjectEarth);
+                if (checkBox1.Checked == true) { Gl.glBindTexture(Gl.GL_TEXTURE_2D, mGlTextureObjectUk); }
+                else
+                    Gl.glBindTexture(Gl.GL_TEXTURE_2D, mGlTextureObjectEarth);
+
                 //   Gl.glBindTexture(Gl.GL_TEXTURE_2D, mGlTextureObjectCloud);
                 Gl.glPushMatrix();
                 Gl.glTranslated(0, -0, -4);
@@ -283,17 +341,19 @@ namespace lab5._1
                 Glu.gluSphere(quadr, 0.7f, 32, 32);
 
                 Gl.glDisable(Gl.GL_TEXTURE_2D);
-
+                
                 Gl.glPopMatrix();
+
+
+
                 #endregion
 
-            
+
 
                 anTvas.Invalidate();
             }
 
         }
-
 
 
         private void timerMove_Tick(object sender, EventArgs e)

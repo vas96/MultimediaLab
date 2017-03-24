@@ -107,8 +107,7 @@ body {
     opacity: 0.75;
      -webkit-animation: moveclouds 18s linear infinite;
     -mox-animation: moveclouds 18s linear infinite;
-    -o-animation: moveclouds 18s linear infinite; 
-    
+    -o-animation: moveclouds 18s linear infinite;     
 }
 
 .four{
@@ -120,7 +119,6 @@ body {
      -webkit-animation: moveclouds 19s linear infinite;
     -mox-animation: moveclouds 19s linear infinite;
     -o-animation: moveclouds 19s linear infinite; 
-    
 }
 
 .five{
@@ -338,6 +336,10 @@ body {
 
 @-webkit-keyframes movecCar {
   0% {margin-left: -1100px;
+     }
+ 50% {width: 500px;
+    height: 500px;
+    
      }
   100% {margin-left: 1100px;}
 } 

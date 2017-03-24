@@ -17,3 +17,6 @@ D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.csproj.Gene
 D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.exe
 D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.pdb
 D:\MultimedaLab\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.csprojResolveAssemblyReference.cache
+D:\MultimedaLab\Lab1\Lab1OpenGl\WindowsGlTest1\bin\Release\WindowsGlTest1.exe.config
+D:\MultimedaLab\Lab1\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.exe
+D:\MultimedaLab\Lab1\Lab1OpenGl\WindowsGlTest1\obj\Release\WindowsGlTest1.pdb
