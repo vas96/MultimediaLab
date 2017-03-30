@@ -1,0 +1,44 @@
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\Lab6.exe.config
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\Lab6.exe
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\Lab6.pdb
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6.csprojResolveAssemblyReference.cache
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\MainWindow.g.cs
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\App.g.cs
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6_MarkupCompile.cache
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6_MarkupCompile.lref
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\MainWindow.baml
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6.g.resources
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6.Properties.Resources.resources
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6.csproj.GenerateResource.Cache
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6.exe
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6.pdb
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\MahApps.Metro.dll
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\System.Windows.Interactivity.dll
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\MahApps.Metro.pdb
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\bin\Debug\MahApps.Metro.xml
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\App.baml
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Resources\Icons.baml
+c:\users\vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\Vas\documents\visual studio 2015\Projects\Lab6\Lab6\obj\Debug\Lab6_Content.g.cs
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\Lab6.exe.config
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6.exe
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6.pdb
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\Lab6.exe
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\Lab6.pdb
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\MahApps.Metro.dll
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\System.Windows.Interactivity.dll
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\MahApps.Metro.pdb
+D:\MultimedaLab\Lab6\Lab6\bin\Debug\MahApps.Metro.xml
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6.csprojResolveAssemblyReference.cache
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Resources\Icons.baml
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Resources\IconsNonShared.baml
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\MainWindow.g.cs
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\App.g.cs
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6_Content.g.cs
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6_MarkupCompile.cache
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6_MarkupCompile.lref
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\App.baml
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\MainWindow.baml
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6.g.resources
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6.Properties.Resources.resources
+D:\MultimedaLab\Lab6\Lab6\obj\Debug\Lab6.csproj.GenerateResource.Cache

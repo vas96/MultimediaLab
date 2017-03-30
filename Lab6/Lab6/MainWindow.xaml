@@ -1,0 +1,166 @@
+﻿<Controls:MetroWindow x:Class="Lab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Lab6"
+        mc:Ignorable="d"
+        Title="Lab6(MediaPlayer)" Height="350" Width="525">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+                <!-- this window should be blue -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <!-- and should use the light theme -->
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button Content="" />
+            <Button>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20"
+                   Height="20"
+                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_flag_bear}"/>
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Vas" />
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+    <Border Width="auto" Height="auto" 
+                CornerRadius="0,30,0,30">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" ></RowDefinition>
+                <RowDefinition Height="5*" ></RowDefinition>
+                
+                <RowDefinition Height="0.2*" ></RowDefinition>
+                <RowDefinition Height="0.7*" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="172"/>
+
+            </Grid.ColumnDefinitions>
+            <Border  Grid.Row="1" Grid.ColumnSpan="2">
+                <Border.Background>
+                    <SolidColorBrush Color="Black"/>
+                </Border.Background>
+                <MediaElement x:Name="mediaElement"  LoadedBehavior="Manual" Margin="0,0,0,0"  HorizontalAlignment="Stretch"  Width="auto">
+            
+                </MediaElement>
+            </Border>
+
+
+
+            <Slider  x:Name="positionSlider" Grid.Row="2" Style="{StaticResource FlatSlider}"  HorizontalAlignment="Stretch" ValueChanged="positionSlider_ValueChanged" Margin="10,0,10,33" Height="Auto" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                
+            </Slider>
+
+            <StackPanel Grid.Row="0" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Left" >
+                <Button x:Name="DarkThem" Content="Dark Them" VerticalAlignment="Center"  HorizontalAlignment="Right" Margin="0,-2,8,-3"  Height="30" Width="75" Style="{DynamicResource MetroCircleButtonStyle}" Click="DarkThem_Click">
+                </Button>
+                <Button x:Name="LightThem" Content="Light Them" VerticalAlignment="Center"  HorizontalAlignment="Right" Margin="0,-2,8,-3"  Height="30" Width="75" Style="{DynamicResource MetroCircleButtonStyle}" Click="LightThem_Click">
+                </Button>
+            </StackPanel>
+            <Button x:Name="FileButt" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="auto" Width="75" Style="{StaticResource AccentedSquareButtonStyle}" Margin="5,1,5,1" Click="FileButt_Click">
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                    <Rectangle Fill="Black" Width="17" Height="auto" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="2">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_folder_open}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="5,0,0,0">File</TextBlock>
+                </StackPanel>
+            </Button>
+
+
+            <StackPanel Grid.Row="3"  Orientation="Horizontal" >
+
+                <Button x:Name="StartButt" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="30"   Width="40" Click="Button_Click" Style="{StaticResource AccentedSquareButtonStyle}" Margin="2,2,12,2">
+                    <Button.Triggers>
+                        <EventTrigger RoutedEvent="Button.MouseMove">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation To="Red" 
+                                    Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" 
+                                    FillBehavior="Stop" 
+                                    Duration="0:0:5"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                        </EventTrigger>
+                    </Button.Triggers>
+                    <Rectangle Fill="Black" Width="21" Height="18" VerticalAlignment="Stretch">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_control_play}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                <Button x:Name="RewindButt" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="30" Width="40" Style="{StaticResource AccentedSquareButtonStyle}" Margin="2" Click="RewindButt_Click">
+                    <Rectangle Fill="Black" Width="21" Height="18" VerticalAlignment="Stretch">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_control_rewind_variant}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                
+                <Button x:Name="StopButt" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="30" Width="40" Style="{StaticResource AccentedSquareButtonStyle}" Margin="2" Click="StopButt_Click">
+                    <Rectangle Fill="Black" Width="21" Height="18" VerticalAlignment="Stretch">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_control_pause}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+
+                <Button x:Name="NoButt" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="30" Width="40" Style="{StaticResource AccentedSquareButtonStyle}" Margin="2" Click="NoButt_Click">
+                    <Rectangle Fill="Black" Width="21" Height="18" VerticalAlignment="Stretch">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_control_stop}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                
+                <Button x:Name="ForwardButt" HorizontalAlignment="Left" Height="30" Width="40" Style="{StaticResource AccentedSquareButtonStyle}" Margin="2" Click="ForwardButt_Click">
+                    <Rectangle Fill="Black" Width="21" Height="18" VerticalAlignment="Stretch">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_control_fastforward_variant}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3"  Orientation="Horizontal"  Grid.Column="1">
+                <Button x:Name="Mute" VerticalAlignment="Center"  Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,8,0"  Height="30" Width="40" Style="{DynamicResource MetroCircleButtonStyle}"  Click="Mute_Click">
+                    <Rectangle Name="lol" Fill="Black" Width="21" Height="18" VerticalAlignment="Stretch">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Visual="{StaticResource appbar_music_wifi}" Stretch="Fill" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                </Button>
+                <StackPanel  VerticalAlignment="Center">
+                <Slider  x:Name="muteSlider"  Width="120"  VerticalAlignment="Center"  HorizontalAlignment="Right" ValueChanged="muteSlider_ValueChanged"></Slider>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="auto" Grid.RowSpan="3" Height="24" Margin="0,5,0,0">
+                <Label Name="time" Height="25" Width="auto" Margin="0,0,0,0">0000/0000</Label>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Controls:MetroWindow>
